@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Colorful Page</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #00796b;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Colorful Page!</h1>
+    <p>Click the button below to see the current date and time:</p>
+    <button onclick="showDate()">Show Date and Time</button>
+    <p id="dateTime"></p>
+
+    <script>
+        function showDate() {
+            const date = new Date();
+            document.getElementById("dateTime").innerText = date.toUTCString();
+        }
+    </script>
+</body>
+</html>
